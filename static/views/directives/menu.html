@@ -1,0 +1,8 @@
+<accordion close-others="oneAtATime">
+    <accordion-group heading="{{item.name}}" ng-repeat="item in items" is-open="item.isOpen" is-disabled="item.isDisabled" ng-click="groupClicked(item)">
+        <ul>
+            <li ng-repeat="link in item.links"><a href="{{link.href}}">{{link.title}}</a></li>
+        </ul>
+    </accordion-group>
+</accordion>
+

@@ -1,0 +1,11 @@
+.idea
+public
+node_modules
+static/bower_components
+build
+dev
+.sass-cache
+**/[0-9].[0-9].[0-9]
+
+content
+

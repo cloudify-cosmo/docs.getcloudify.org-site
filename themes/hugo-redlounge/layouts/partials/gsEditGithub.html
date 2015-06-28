@@ -1,0 +1,13 @@
+{{ if .IsPage }}
+<a      id="edit-on-github"
+        data-toggle="popover"
+        type="button"
+        href="{{ .Site.Params.projecturl }}/tree/{{ .Site.Params.projectversion }}/content/{{ .File.Path }}"
+        class="btn btn-default"
+        popover-title = "Help Us Improve!"
+        popover="Found a mistake in this page? Click here to edit it in Github and propose your change!"
+        title="Edit on github">
+    <i class="fa fa-github-alt"></i>
+    <span>Edit</span>
+</a>
+{{ end }}

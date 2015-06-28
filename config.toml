@@ -1,0 +1,32 @@
+baseurl = "http://getcloudify.gsdev.info.s3-website-us-east-1.amazonaws.com"
+languageCode = "en-us"
+title = "Cloudify Documentation"
+theme="hugo-redlounge"
+uglyurls=true
+
+[permalinks]
+    guide= "/3.3.0/:filename"
+
+[params]
+categoriescss= "/style/template.css"
+highlightStyle="darkula"
+
+sidebartitle = "Menu"
+sidebartagline = "Is super awesome"
+
+projecturl="https://github.com/guy-mograbi-at-gigaspaces/getcloudify-hugo-version"
+projectversion="3.1.0"
+
+
+[[menu.main]]
+    name = "Blog"
+    url = "/posts"
+
+[[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://twitter.com/CloudifySource"
+    identifier = "twitter"
+
+[[menu.footer]]
+    name = "Blog"
+    url = "/posts"
