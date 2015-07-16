@@ -1,4 +1,4 @@
-baseurl = "http://getcloudify.gsdev.info.s3-website-us-east-1.amazonaws.com"
+baseurl = "http://docs.getcloudify.org/"
 languageCode = "en-us"
 title = "Cloudify Documentation"
 theme="hugo-redlounge"

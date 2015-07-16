@@ -62,8 +62,7 @@ module.exports = function (grunt) {
             },
             getcloudify: {
                 files: {
-                    'public/javascript/getcloudify.min.js': ['public/javascript/getcloudify.all.js'],
-                    'build/javascript/getcloudify.min.js': ['build/javascript/getcloudify.all.js']
+                    'public/javascript/getcloudify.min.js': ['public/javascript/getcloudify.all.js']
                 }
             }
         },
@@ -74,8 +73,7 @@ module.exports = function (grunt) {
                     width: 60
                 },
                 files: {
-                    'public/<%= build.content.version %>/articles.json': ['./content/**/*.md'],
-                    'build/<%= build.content.version %>/articles.json': ['./content/**/*.md']
+                    'public/<%= build.content.version %>/articles.json': ['./content/**/*.md']
                 }
             }
         },
@@ -83,11 +81,8 @@ module.exports = function (grunt) {
             public: {
                 src: javascriptSources,
                 dest: 'public/javascript/getcloudify.all.js'
-            },
-            build: {
-                src: javascriptSources,
-                dest: 'build/javascript/getcloudify.all.js'
             }
+
         },
         replace: {
             version: {
@@ -184,7 +179,7 @@ module.exports = function (grunt) {
                 stdout: true
             },
             build: {
-                command: 'hugo -d build/ '
+                command: 'hugo -d public/ '
             }
 
         },
@@ -210,7 +205,7 @@ module.exports = function (grunt) {
             },
             upload: {
                 files: [
-                    {dest: '', cwd: './build', expand: true, src: ['**'], action: 'upload'}
+                    {dest: '', cwd: './public', expand: true, src: ['**'], action: 'upload'}
                 ]
             }
         },
@@ -228,7 +223,7 @@ module.exports = function (grunt) {
                     {
                         cwd: '<%= build.content.root %>/static/images',
                         src: ['**'],
-                        dest: 'static/images/<%= build.content.version %>'
+                        dest: 'static/<%= build.content.version %>/images'
                     } // includes files in path and its subdirs
 
                 ],
@@ -268,7 +263,6 @@ module.exports = function (grunt) {
                 'url': 'https://api.github.com/repos/guy-mograbi-at-gigaspaces/getcloudify-hugo-version/branches'
             },
             function (err, result, body) {
-                grunt.file.write('build/versions.json', body);
                 grunt.file.write('public/versions.json', body);
                 done();
             });
@@ -342,7 +336,7 @@ module.exports = function (grunt) {
     grunt.registerTask('server', ['serve']);
 
     grunt.registerTask('replaceVersion', ['normalizeVersion', 'replace:version']);
-    grunt.registerTask('build', ['cleanAll', 'readConfiguration', 'sync:content', 'replaceVersion', 'jshint', 'shell:build', 'concat','uglify','listAllBranches']);
+    grunt.registerTask('build', ['cleanAll', 'readConfiguration', 'sync:content', 'replaceVersion', 'jshint', 'shell:build', 'concat','uglify','listAllBranches','sass','frontmatter']);
 
     grunt.registerTask('upload', ['readS3Keys', 'aws_s3:upload']);
     grunt.registerTask('default', 'build');
