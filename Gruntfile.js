@@ -317,7 +317,19 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('readS3Keys', function () {
-        grunt.config.data.aws = grunt.file.readJSON(process.env.AWS_JSON || './dev/aws.json'); // Read the file
+
+
+        grunt.config.data.aws = {
+            'accessKey' : process.env.AWS_ACCESS_KEY,
+            'secretKey' : process.env.AWS_SECRET_ACCESS_KEY,
+            'bucket' : process.env.AWS_BUCKET
+        };
+
+
+        if ( !process.env.NO_CONFIGURATION_OVERRIDE ) {
+            grunt.config.data.aws = _.merge( {}, grunt.config.data.aws, grunt.file.readJSON(process.env.AWS_JSON || './dev/aws.json') ); // Read the file
+        }
+
     });
 
     /**
