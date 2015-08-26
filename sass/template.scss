@@ -4,6 +4,7 @@
 @import './blue';
 @import './overwrite';
 @import './guide';
+@import "../themes/hugo-redlounge/static/css/redlounge";
 
 body{
     &, section {
@@ -20,12 +21,14 @@ body{
 
 pre{ background:none; padding:0; margin:0; border:none;  }
 @media (min-width: 48rem) {
+
     #layout {
 //        .sidebar {
 //            .header {
 //                margin: 40% 2rem 0;
 //            }
 //        }
+
         #versionSelect {
             width: 130px;
             margin-right: 14px;
@@ -88,3 +91,48 @@ pre{ background:none; padding:0; margin:0; border:none;  }
         }
     }
 }
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    background-color: darkslategray; //#2d303b; sidebar color conflict
+
+    .nav {
+        border-right: none;
+        border-left: none;
+        padding-left: 25%;
+/*        top: 20px;*/
+    }
+}
+
+#header-hidden-link {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    z-index:999;
+    float:right;
+    padding-left: 20px;
+
+    #input-container{
+
+        #st-search-input {
+            width: 180px;
+            border-radius: 25px;
+        }
+    }
+
+}
+
+a {
+
+    margin-top: 10px;
+    color: #ffffff;
+}
+/*.cloudifyLogo{
+    background:url(../public/img/CloudifyIcon-Grey256.png);
+}*/

@@ -42,7 +42,7 @@ p a {
 }
 h1 {
 	font-family: 'Libre Baskerville', serif;
-	font-weight: 700; 
+	font-weight: 700;
 }
 .center {
 	text-align: center;
@@ -203,6 +203,8 @@ a.post-author {
 .post {
     padding-bottom: 1.8rem;
     line-height: 1.75rem;
+    margin-top: 77px;
+
 }
 .post p {
 	margin-bottom: 1.75rem;
@@ -470,7 +472,7 @@ hr.thin {
 
     .sidebar {
         position: fixed;
-        top: 0;
+        top: 77px;
         bottom: 0;
     }
 }
