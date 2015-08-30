@@ -1,0 +1,36 @@
+section.post{
+
+    accordion, [accordion]{
+
+        .panel{
+            border:1px solid #CECECE;
+            .panel-title{
+                margin:0;
+
+            }
+            .panel-heading{
+                a {
+                    display:block;
+                    width:100%;
+                    height:100%;
+                    padding: 20px;
+                    font-size: 20px;
+                    background-color: #ddd;
+                    font-weight:bold;
+                    &, &:active, &:hover {
+                        outline:none;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+            .panel-collapse{
+                padding:10px;
+                &.collapse{
+                    display:none;
+                }
+            }
+        }
+    }
+
+}

@@ -1,7 +1,16 @@
+<input ng-model="find" placeholder="Type to search..."/>
 <accordion close-others="oneAtATime">
-    <accordion-group heading="{{item.name}}" ng-repeat="item in items" is-open="item.isOpen" is-disabled="item.isDisabled" ng-click="groupClicked(item)">
+
+    <accordion-group ng-show="item.displayed" ng-repeat="item in items"  ng-class="{ open: item.isOpen }" is-open="item.isOpen" is-disabled="item.isDisabled" ng-click="groupClicked(item)">
+        <accordion-heading>
+            <div class="my-header-title">
+
+                <a ng-show="item.href" href="{{item.href}}" class="{{item.icon}}">{{item.name}}<span><i class="fa fa-external-link"></i></span></a>
+                <span ng-show="!item.href" class="{{item.icon}}">{{item.name}}</span>
+            </div>
+        </accordion-heading>
         <ul>
-            <li ng-repeat="link in item.links"><a href="{{link.href}}">{{link.title}}</a></li>
+            <li ng-repeat="link in item.links" title="{{link.title}}" ng-show="link.displayed" ng-class="{ current: !!link.current}"><a href="{{link.href}}">{{link.title}}</a></li>
         </ul>
     </accordion-group>
 </accordion>

@@ -14,8 +14,8 @@ highlightStyle="darkula"
 sidebartitle = "Menu"
 sidebartagline = "Is super awesome"
 
-projecturl="https://github.com/guy-mograbi-at-gigaspaces/getcloudify-hugo-version"
-projectversion="3.1.0"
+projecturl="https://github.com/cloudify-cosmo/docs.getcloudify.org"
+projectversion="master"
 
 
 [[menu.main]]
