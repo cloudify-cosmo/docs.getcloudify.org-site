@@ -406,6 +406,9 @@ nav#TableOfContents li {
 
 /* Footer */
 .footer {
+    letter-spacing:normal;
+    width:100%;
+    z-index:1000;
     background:#000000;
     position: relative;
     text-align: center;
