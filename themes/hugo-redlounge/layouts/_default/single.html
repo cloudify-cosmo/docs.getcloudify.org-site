@@ -111,10 +111,10 @@
           {{ if not .Params.nocomment }}
           	{{ template "_internal/disqus.html" . }}
           {{ end }}
-
-      {{ partial "footer.html" . }}
     </div>
-  </div>
+    </div>
+    {{ partial "footer.html" . }}
+
 	{{ if .Params.totop }}
 		<script type="text/javascript">
 			onscroll = function() {

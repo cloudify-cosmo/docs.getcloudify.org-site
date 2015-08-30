@@ -100,8 +100,12 @@ pre{ background:none; padding:0; margin:0; border:none;  }
     min-height: 50px;
     margin-bottom: 0px;
     border: 1px solid transparent;
-    background-color: darkslategray; //#2d303b; sidebar color conflict
+    background-color: #2d303b; //#2d303b; sidebar color conflict
 
+    :hover{
+        color:cornflowerblue;
+        text-decoration: none;
+    }
     .nav {
         border-right: none;
         border-left: none;

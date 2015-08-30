@@ -406,11 +406,21 @@ nav#TableOfContents li {
 
 /* Footer */
 .footer {
+    background:#000000;
+    position: relative;
     text-align: center;
     padding: 1rem 0;
-    font-weight: 100;
     color: #aeaeae;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+
+    .title{
+       color: #ffffff;
+         }
+
+    .social{
+        position: relative;
+        display: inline-block;
+    }
 }
 .footer a, .footer p {
 	color: #aeaeae;
@@ -419,8 +429,8 @@ nav#TableOfContents li {
 	text-decoration: none;
 }
 .footer a:hover {
-	color:#E54028;
-	text-decoration: underline;
+	color:cornflowerblue;
+	/*text-decoration: underline;*/
 }
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus {
