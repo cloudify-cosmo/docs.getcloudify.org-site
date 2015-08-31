@@ -66,7 +66,12 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
                 _.each(articles, function(a){
                     var cat = a.category.replace(' root', '').toLowerCase(); // silly convention for nodes in tree with children
                     if ( !categories[cat]){
-                        categories[cat] = { links: [], displayed: true };
+                        if ( !!categoriesMap[cat] ) {
+                            categories[cat] = {links: [], displayed: true};
+                        }else{
+                            $log.error('category ', cat , ' found in frontmatter but not declared.. will hide content');
+                            return;
+                        }
                     }
 
                     if (a.category.indexOf(' root') > 0 ){
