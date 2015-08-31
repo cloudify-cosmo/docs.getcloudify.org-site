@@ -13,12 +13,18 @@ angular.module('getcloudify').directive('cfyVersions', function( $http, $log, Cf
                     if ( item.name === currentVersion ){
                         $scope.showVersion = item;
                     }
-                })
+                });
+
+                if ( !$scope.showVersion ){
+                    $scope.showVersion = _.find($scope.versions, function(v){
+                        return v.name === 'master';
+                    });
+                }
             });
 
             $scope.redirectToVersion = function( version ){
                 $log.info(version);
-                document.location = document.location.origin + '/' + version;
+                document.location = document.location.origin + '/' + version.name;
             }
         }
     }
