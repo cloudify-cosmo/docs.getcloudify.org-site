@@ -8,6 +8,10 @@
 		</div>
 	{{ end }}
 
+    <div cfy-navbar> <!-- use directive as this is cross version! -->
+
+    </div>
+
 	<div id="layout" class="pure-g">
     {{ partial "sidebar.html" . }}
 
@@ -107,10 +111,11 @@
           {{ if not .Params.nocomment }}
           	{{ template "_internal/disqus.html" . }}
           {{ end }}
-
-      {{ partial "footer.html" . }}
     </div>
-  </div>
+    </div>
+
+    <div cfy-footer></div>
+
 	{{ if .Params.totop }}
 		<script type="text/javascript">
 			onscroll = function() {
