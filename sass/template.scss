@@ -4,6 +4,8 @@
 @import './blue';
 @import './overwrite';
 @import './guide';
+@import './sidebar';
+@import './post';
 @import "../themes/hugo-redlounge/static/css/redlounge";
 
 body{
@@ -21,14 +23,12 @@ body{
 
 pre{ background:none; padding:0; margin:0; border:none;  }
 @media (min-width: 48rem) {
-
     #layout {
 //        .sidebar {
 //            .header {
 //                margin: 40% 2rem 0;
 //            }
 //        }
-
         #versionSelect {
             width: 130px;
             margin-right: 14px;
