@@ -8,8 +8,8 @@
 		</div>
 	{{ end }}
 
-    <div>
-        {{ partial "navBar.html" . }}
+    <div cfy-navbar> <!-- use directive as this is cross version! -->
+
     </div>
 
 	<div id="layout" class="pure-g">
@@ -113,7 +113,8 @@
           {{ end }}
     </div>
     </div>
-    {{ partial "footer.html" . }}
+
+    <div cfy-footer></div>
 
 	{{ if .Params.totop }}
 		<script type="text/javascript">

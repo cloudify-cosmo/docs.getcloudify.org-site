@@ -1,4 +1,5 @@
 
+@import './variables';
 @import './bootstrap';
 @import './bootstrap_responsive';
 @import './blue';
@@ -7,10 +8,13 @@
 @import './sidebar';
 @import './post';
 @import "../themes/hugo-redlounge/static/css/redlounge";
+@import './navbar';
+
 
 body{
+
     &, section {
-        font-family: 'Open Sans', Arial, sans-serif;
+
         font-size: 16px;
         font-weight: 350;
         line-height: 1.6em;
@@ -92,78 +96,3 @@ pre{ background:none; padding:0; margin:0; border:none;  }
     }
 }
 
-.navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    min-height: 50px;
-    margin-bottom: 0px;
-    border: 1px solid transparent;
-    background-color: #2d303b; //#2d303b; sidebar color conflict
-
-    :hover{
-        color:cornflowerblue;
-        text-decoration: none;
-    }
-    .nav {
-        border-right: none;
-        border-left: none;
-        padding-left: 25%;
-/*        top: 20px;*/
-    }
-
-    #downloadBtn{
-        height: 22px;
-        margin: 0 0 0 28px;
-        border-radius: 15px;
-        background: #00B4DA !important;
-        border: 1px solid #00B4DA !important;
-        position: relative;
-        top: 19px;
-    }
-}
-
-#header-hidden-link {
-    position: relative;
-    right: 0px;
-    top: 0px;
-    z-index:999;
-    float:right;
-    padding-left: 20px;
-
-    #proBtn{
-        margin-left: 10px;
-        border-radius: 15px;
-        background: #00B4DA !important;
-        border: 5px solid #00B4DA !important;
-        position: relative;
-        top: 21px;
-    }
-    #testDriveBtn{
-        margin-left: 200px;
-        border-radius: 15px;
-        background: #479c18 !important;
-        border: 5px solid #479c18 !important;
-        position: relative;
-        top: 21px;
-    }
-    #input-container{
-
-        #st-search-input {
-            width: 180px;
-            border-radius: 25px;
-        }
-    }
-
-}
-
-a {
-
-    margin-top: 10px;
-    color: #ffffff;
-}
-
-.cloudifyLogo{ padding:0 !important; position:relative; z-index:999}
-.cloudifyLogo a { background:url(../public/img/logoSmall.png) no-repeat bottom left  !important; ; display:block; width:62px; height:28px; overflow:hidden}
-.cloudifyLogo:hover a{background-position: 0 10px  !important;}
