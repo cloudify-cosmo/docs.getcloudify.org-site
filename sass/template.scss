@@ -163,6 +163,7 @@ a {
     margin-top: 10px;
     color: #ffffff;
 }
-/*.cloudifyLogo{
-    background:url(../public/img/CloudifyIcon-Grey256.png);
-}*/
+
+.cloudifyLogo{ padding:0 !important; position:relative; z-index:999}
+.cloudifyLogo a { background:url(../public/img/logoSmall.png) no-repeat bottom left  !important; ; display:block; width:62px; height:28px; overflow:hidden}
+.cloudifyLogo:hover a{background-position: 0 10px  !important;}
