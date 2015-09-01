@@ -1,5 +1,4 @@
-this is layouts/index.html
-
 <script>
-    document.location = document.location + '/3.3.0/'
+    // remove trailing slash and append default location
+    document.location = ( document.location.href.replace(/\/$/, '') + '/3.3.0/' );
 </script>
