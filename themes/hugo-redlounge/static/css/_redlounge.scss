@@ -7,6 +7,7 @@ html {
 	color: #2d303b;
 }
 html, p, nav, section, article {
+//    font-family: 'Open Sans', Arial, sans-serif;
 	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 }
 pre {
@@ -42,7 +43,7 @@ p a {
 }
 h1 {
 	font-family: 'Libre Baskerville', serif;
-	font-weight: 700; 
+	font-weight: 700;
 }
 .center {
 	text-align: center;
@@ -203,6 +204,8 @@ a.post-author {
 .post {
     padding-bottom: 1.8rem;
     line-height: 1.75rem;
+    margin-top: 77px;
+
 }
 .post p {
 	margin-bottom: 1.75rem;
@@ -404,11 +407,33 @@ nav#TableOfContents li {
 
 /* Footer */
 .footer {
+    letter-spacing:normal;
+    width:100%;
+    z-index:1000;
+    background:#222;
+    position: relative;
     text-align: center;
     padding: 1rem 0;
-    font-weight: 100;
     color: #aeaeae;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+
+    .title{
+       color: #ffffff;
+         }
+
+    .topics{
+        margin-left: 21px;
+    }
+
+    .social{
+        position: relative;
+        display: inline-block;
+    }
+
+    .span3{
+        text-align: left;
+    }
+
 }
 .footer a, .footer p {
 	color: #aeaeae;
@@ -417,8 +442,8 @@ nav#TableOfContents li {
 	text-decoration: none;
 }
 .footer a:hover {
-	color:#E54028;
-	text-decoration: underline;
+	color:cornflowerblue;
+	/*text-decoration: underline;*/
 }
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus {
@@ -470,7 +495,7 @@ hr.thin {
 
     .sidebar {
         position: fixed;
-        top: 0;
+        top: 77px;
         bottom: 0;
     }
 }

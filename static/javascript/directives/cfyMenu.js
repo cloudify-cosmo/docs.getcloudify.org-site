@@ -4,7 +4,7 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
         restrict: 'A',
         scope:{},
         templateUrl: '/views/directives/menu.html',
-        link: function( $scope/*, element*/ ){
+        link: function( $scope, element ){
 
             var articles = null;
 
@@ -149,7 +149,8 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
                 if ( !!item.href ){
                     document.location.href = item.href;
                 }
-            }
-        }
-    }
+            };
+
+
+    }}
 });
