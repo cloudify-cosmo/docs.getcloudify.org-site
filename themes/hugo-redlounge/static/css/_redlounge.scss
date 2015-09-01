@@ -420,10 +420,19 @@ nav#TableOfContents li {
        color: #ffffff;
          }
 
+    .topics{
+        margin-left: 21px;
+    }
+
     .social{
         position: relative;
         display: inline-block;
     }
+
+    .span3{
+        text-align: left;
+    }
+
 }
 .footer a, .footer p {
 	color: #aeaeae;
