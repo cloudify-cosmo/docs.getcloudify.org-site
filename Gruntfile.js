@@ -344,7 +344,7 @@ module.exports = function (grunt) {
     grunt.registerTask('replaceAll', ['readConfiguration','replace:tags']);
     grunt.registerTask('syncAll', ['readConfiguration', 'sync:content']);
     grunt.registerTask('cleanAll', ['clean']);
-    grunt.registerTask('serve', ['readConfiguration','sync:content','listAllBranches','hugoServer','sass','concat','uglify','open:devserver','concurrent:watch']);
+    grunt.registerTask('serve', ['readConfiguration','sync:content','frontmatter','listAllBranches','hugoServer','sass','concat','uglify','open:devserver','concurrent:watch']);
     grunt.registerTask('server', ['serve']);
 
     grunt.registerTask('replaceVersion', ['normalizeVersion', 'replace:version']);
