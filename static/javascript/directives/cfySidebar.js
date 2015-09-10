@@ -1,6 +1,6 @@
 // this directive helps us display the sidebar in collision with the footer.
 // when the footer is displayed, we shorten the sidebar.
-angular.module('getcloudify').directive('cfySidebar', function(  ){
+angular.module('getcloudify').directive('cfySidebar', function( $interval  ){
 
     return {
         restrict: 'C',
@@ -18,21 +18,23 @@ angular.module('getcloudify').directive('cfySidebar', function(  ){
             // also fix footer position here
 
             function fixFooterPosition(){
-                var current = $('.footer').position().top;
-                var proper = $(window).height() - $('.footer').outerHeight();
+                try {
+                    var current = $('.footer').position().top;
+                    var proper = $(window).height() - $('.footer').outerHeight();
 
-                console.log('proper,current', proper, current );
-                if ( current < proper ){
-                    $('.footer').css( { 'position' : 'fixed' , 'bottom' : 0 });
-                }else{
-                    $('.footer').css( { 'position' : 'inherit' , 'bottom' : 'initial' });
-                }
+                    console.log('proper,current', proper, current);
+                    if (current <= proper) {
+                        $('.footer').css({'position': 'fixed', 'bottom': 0});
+                    } else {
+                        $('.footer').css({'position': 'inherit', 'bottom': 'initial'});
+                    }
+                }catch(e){}
 
             }
 
 
             var autoFitSidebar = function () {
-                console.log('auto fit sidebar');
+                //console.log('auto fit sidebar');
                 fixFooterPosition();
                 try {
                     if (screenBigEnough()) {
@@ -54,7 +56,7 @@ angular.module('getcloudify').directive('cfySidebar', function(  ){
 
             $scope.$watch(function(){
                 try {
-                    console.log($('.footer').offset().top);
+                    //console.log($('.footer').offset().top);
                     return $('.footer').offset().top;
                 }catch(e){
                     return null;
@@ -62,7 +64,7 @@ angular.module('getcloudify').directive('cfySidebar', function(  ){
             } , autoFitSidebar); // does not work with zoom in/out
 
 
-                //$interval(fixFooterPosition,1000);
+            //$interval(fixFooterPosition,1000);
             autoFitSidebar();
 
         }
