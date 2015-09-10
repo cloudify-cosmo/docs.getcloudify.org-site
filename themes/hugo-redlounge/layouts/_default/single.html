@@ -49,13 +49,6 @@
                 	<!--<span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>-->
             	<!--</span>-->
             <!--{{ end }}-->
-            {{ if not .Params.noauthor }}
-            	{{ if .Params.author }}
-            		<span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="{{ .Params.authorlinktarget }}">{{ .Params.author }}</a></span>
-            		{{ partial "authorsocial.html" . }}
-            	{{ end }}
-            {{ end }}
-
 
 			{{ $Site := .Site }}
 			{{ if .Params.categories }}
@@ -67,7 +60,6 @@
 			{{ end }}
 
 
-            {{ partial "socialsharing.html" . }}
 
 
 			{{ if .Params.bannerinline }}
@@ -76,9 +68,6 @@
 
             {{ .Content }}
 
-			{{ if .Params.socialsharing }}
-		    	{{ partial "socialsharing.html" . }}
-		    {{ end }}
 
 			{{ if .Params.tags }}
 				<div class="tags-list">
@@ -134,14 +123,6 @@
 		</script>
 	{{ end }}
 
-	<!--{{ if .Params.socialsharing }}-->
-		<script type="text/javascript">
-			function popupShare(url) {
-				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
-				return false;
-			}
-		</script>
-	<!--{{ end }}-->
 
   {{ partial "bodyend.html" . }}
 </body>
