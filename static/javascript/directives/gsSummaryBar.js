@@ -2,7 +2,7 @@ angular.module('getcloudify').directive('gsSummaryBar', function( ){
 
     return {
         restrict: 'A',
-        template: '<li ng-repeat="item in items"><a href="#{{item.id}}">{{item.text}}</a></li>',
+        template: '<li ng-repeat="item in items"><a href="#{{item.id}}" target="_self">{{item.text}}</a></li>',
         link: function( $scope/*, element*/ ){
 
             $scope.items = [];
