@@ -19,15 +19,8 @@ angular.module('getcloudify').directive('cfySidebar', function( $interval  ){
 
             function fixFooterPosition(){
                 try {
-                    var current = $('.footer').position().top;
-                    var proper = $(window).height() - $('.footer').outerHeight();
+                    $('.post').css('min-height',$(window).height() - ( $('body').height() - $('.post').outerHeight() ) );
 
-                    console.log('proper,current', proper, current);
-                    if (current <= proper) {
-                        $('.footer').css({'position': 'fixed', 'bottom': 0});
-                    } else {
-                        $('.footer').css({'position': 'inherit', 'bottom': 'initial'});
-                    }
                 }catch(e){}
 
             }
