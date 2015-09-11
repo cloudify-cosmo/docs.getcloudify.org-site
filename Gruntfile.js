@@ -79,7 +79,7 @@ module.exports = function (grunt) {
                     width: 60
                 },
                 files: {
-                    'public/<%= build.content.version %>/articles.json': ['./content/**/*.md']
+                    'public/<%= build.content.version %>/articles.json': ['./content/**/*.md','./content/**/*.html']
                 }
             }
         },
