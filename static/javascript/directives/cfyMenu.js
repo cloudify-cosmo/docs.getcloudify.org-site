@@ -1,10 +1,10 @@
-angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVersion, $rootScope, $location ){
+angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVersion, $rootScope ){
 
     return {
         restrict: 'A',
         scope:{},
         templateUrl: '/views/directives/menu.html',
-        link: function( $scope, element ){
+        link: function( $scope ){
 
             var articles = null;
 
@@ -91,7 +91,8 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
 
                         categories[cat].links.push(item);
 
-                        if (document.location.pathname.indexOf(a.path + '.html') > 0) {
+                        if (item.current) {
+                            $rootScope.page = a;
                             currentCategory = cat;
                             item.active = true;
                         }
