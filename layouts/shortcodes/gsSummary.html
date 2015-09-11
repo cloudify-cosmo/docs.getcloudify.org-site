@@ -1,6 +1,6 @@
 <!--gsSummary shortcode__-->
-<p class="lead"> {{ .Inner }} </p>
-<hr style='margin-top:5px; margin-bottom:5px;'/>
-<ul gs-summary-bar class='nav nav-pills' style='margin-bottom: 0px;' id='summarypanel'></ul>
-<hr style='margin-top:5px; margin-bottom:25px;'/>
+<p class="lead">  {{ $.Page.Params.abstract }} {{ .Inner }} </p>
+
+<div gs-summary-bar></div>
+
 <!--<script>$(document).ready(function() {createLinkList('h1[id]', 'summarypanel');});</script>-->

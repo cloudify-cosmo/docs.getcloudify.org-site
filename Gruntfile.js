@@ -8,6 +8,12 @@ module.exports = function (grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     var javascriptSources = [
+        'static/javascript/vendor/jquery.min.js',
+        'static/javascript/vendor/lodash.min.js',
+        'static/javascript/vendor/angular.min.js',
+        'static/javascript/vendor/ui-bootstrap.min.js',
+        'static/javascript/vendor/ui-bootstrap-tpls.min.js',
+        'static/javascript/vendor/highlight.min.js',
         'static/javascript/getcloudify.js',
         'static/javascript/directives/**/*.js',
         'static/javascript/services/**/*.js',

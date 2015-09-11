@@ -78,28 +78,28 @@
 				</div>
 			{{ end }}
 
-			{{ if not .Params.nopaging }}
-				<div class="paging">
-					<span class="paging-label">More Reading</span>
-					{{ if .Prev }}
-					<div class="paging-newer">
-						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
-		            </div>
-		            {{ end }}
+			<!--{{ if not .Params.nopaging }}-->
+				<!--<div class="paging">-->
+					<!--<span class="paging-label">More Reading</span>-->
+					<!--{{ if .Prev }}-->
+					<!--<div class="paging-newer">-->
+						<!--<span class="dark-red">Newer</span><span class="decorative-marker">//</span>-->
+						<!--<a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>-->
+		            <!--</div>-->
+		            <!--{{ end }}-->
 
-					{{ if .Next }}
-					<div class="paging-older">
-						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
-		            </div>
-		            {{ end }}
-	            </div>
-            {{ end }}
+					<!--{{ if .Next }}-->
+					<!--<div class="paging-older">-->
+						<!--<span class="dark-red">Older</span><span class="decorative-marker">//</span>-->
+			            <!--<a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>-->
+		            <!--</div>-->
+		            <!--{{ end }}-->
+	            <!--</div>-->
+            <!--{{ end }}-->
           </section>
-          {{ if not .Params.nocomment }}
-          	{{ template "_internal/disqus.html" . }}
-          {{ end }}
+          <!--{{ if not .Params.nocomment }}-->
+          	<!--{{ template "_internal/disqus.html" . }}-->
+          <!--{{ end }}-->
     </div>
     </div>
 
