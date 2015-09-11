@@ -4,6 +4,9 @@ title = "Cloudify Documentation"
 theme="hugo-redlounge"
 uglyurls=true
 
+[blackfriday]
+plainIdAnchors=true
+
 [permalinks]
     guide= "/3.3.0/:filename"
 
