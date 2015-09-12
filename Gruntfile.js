@@ -7,13 +7,17 @@ module.exports = function (grunt) {
 
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+
+    var vendorSources = [
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/lodash/dist/lodash.min.js',
+        'bower_components/angular/angular.min.js',
+        'bower_components/angular-bootstrap/ui-bootstrap.min.js',
+        'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
+        'bower_components/highlightjs/highlight.pack.js'
+    ];
+
     var javascriptSources = [
-        'static/javascript/vendor/jquery.min.js',
-        'static/javascript/vendor/lodash.min.js',
-        'static/javascript/vendor/angular.min.js',
-        'static/javascript/vendor/ui-bootstrap.min.js',
-        'static/javascript/vendor/ui-bootstrap-tpls.min.js',
-        'static/javascript/vendor/highlight.min.js',
         'static/javascript/getcloudify.js',
         'static/javascript/directives/**/*.js',
         'static/javascript/services/**/*.js',
@@ -62,13 +66,15 @@ module.exports = function (grunt) {
                 }
             }
         },
+
         uglify: {
             options: {
                 mangle: false
             },
             getcloudify: {
                 files: {
-                    'public/javascript/getcloudify.min.js': ['public/javascript/getcloudify.all.js']
+                    'public/javascript/getcloudify.min.js': ['public/javascript/getcloudify.all.js'],
+                    'public/javascript/getcloudify-vendor.min.js': ['public/javascript/getcloudify-vendor.js']
                 }
             }
         },
@@ -87,6 +93,10 @@ module.exports = function (grunt) {
             public: {
                 src: javascriptSources,
                 dest: 'public/javascript/getcloudify.all.js'
+            },
+            vendor: {
+                src: vendorSources,
+                dest: 'public/javascript/getcloudify-vendor.js'
             }
 
         },
@@ -206,7 +216,8 @@ module.exports = function (grunt) {
                 access: 'public-read',
                 bucket: '<%= aws.bucket %>',
                 uploadConcurrency: 5, // 5 simultaneous uploads
-                downloadConcurrency: 5 // 5 simultaneous downloads
+                downloadConcurrency: 5, // 5 simultaneous downloads
+                gzip:true
 
             },
             upload: {

@@ -1,7 +1,7 @@
 .idea
 public
 node_modules
-static/bower_components
+bower_components
 build
 dev
 .sass-cache
