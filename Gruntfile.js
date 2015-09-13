@@ -13,8 +13,7 @@ module.exports = function (grunt) {
         'bower_components/lodash/dist/lodash.min.js',
         'bower_components/angular/angular.min.js',
         'bower_components/angular-bootstrap/ui-bootstrap.min.js',
-        'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
-        'bower_components/highlightjs/highlight.pack.js'
+        'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
     ];
 
     var javascriptSources = [
