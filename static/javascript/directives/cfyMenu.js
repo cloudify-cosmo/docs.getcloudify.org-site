@@ -175,6 +175,7 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
 
                 _.each(articles, function( item ){
                     item.hidden = !patt.test(item.title);
+                    item.expand = false;
                     if ( !item.hidden ){
                         displayed.push(item);
                     }
@@ -185,6 +186,7 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
                     var item = disp.parent;
                     while (item){
                         item.hidden = false;
+                        item.expand = true; // expend found results
                         item = item.parent;
                     }
                 });
