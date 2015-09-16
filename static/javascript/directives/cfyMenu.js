@@ -15,7 +15,6 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
             treeTemplate.html(''); // reset
 
             $scope.nodeClicked = function( node ){
-                console.log('node clicked');
                 node.expand = !node.expand;
             };
 
@@ -113,6 +112,7 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
                     v.current = document.location.href.indexOf(v.path + '.html') > 0;
                     if (v.current){
                         currentNode = v; // to expand the tree
+                        $rootScope.page = currentNode;
                     }
 
 
@@ -156,7 +156,6 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
                 });
 
                 tree.sort(sortCategories);
-                console.log('this is tree', tree);
 
                 var item = currentNode;
                 while(item){
