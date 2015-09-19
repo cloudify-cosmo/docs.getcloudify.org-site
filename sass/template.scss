@@ -66,6 +66,32 @@ pre{ background:none; padding:0; margin:0; border:none;  }
     }
 }
 
+.post.busy{
+    position:relative;
+    min-height:700px;
+    &:after {
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        content:"";
+        display:block;
+        background: rgba(255,255,255,0.7);
+    }
+    &:before{
+        position:fixed;
+        left:50%;
+        top:50%;
+        font-size:40px;
+        content:"Loading...";
+        display:block;
+        z-index:1;
+        padding: 40px;
+        background:white;
+    }
+}
+
 
 #layout{
     .sidebar{

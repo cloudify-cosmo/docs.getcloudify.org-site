@@ -8,6 +8,7 @@ angular.module('getcloudify').directive('gsSummaryBar', function( ){
 
             $scope.items = [];
             $scope.$watch( function(){return $('h1[id]').length; }, function(){
+                $scope.items = [];
                 $('h1[id]').each(function(index,elem){
                     var $elem = $(elem);
                     $scope.items.push({ 'id' : $elem.attr('id') , 'text' : $elem.text() });

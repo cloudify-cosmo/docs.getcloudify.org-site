@@ -2,8 +2,23 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600,600italic,700,700italic,800,800italic,300);
 
+body{
+    .pure-g [class *="pure-u"]{
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+}
 *{
-    font-family:'Open Sans', Arial, sans-serif;
+    &:not(pre,code) {
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+}
+
+code {
+    background :#eee;
+    color: #d14;
+    padding:2px;
+    border: 1px solid #e1e1e8;
+
 }
 
 h1, h2, h3, h4, h5, h6{

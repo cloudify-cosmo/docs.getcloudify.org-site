@@ -14,8 +14,22 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
             var nodeHtml = treeTemplate.html();
             treeTemplate.html(''); // reset
 
+
+            function setCurrentNode(node){
+                _.each(articles, function(a){
+                    a.current = false;
+                });
+                node.current = true;
+                $rootScope.page = node;
+            }
+
             $scope.nodeClicked = function( node ){
-                node.expand = !node.expand;
+                if ( node.current ) {
+                    node.expand = !node.expand;
+                }else{
+                    node.expand = true;
+                }
+                setCurrentNode(node);
             };
 
 
@@ -192,7 +206,8 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
             });
 
             $scope.current = function(node){
-                return node.current;
+
+                return node && node.current;
             };
 
     }}

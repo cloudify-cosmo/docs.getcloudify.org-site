@@ -5,7 +5,7 @@
 
 <div tree-template>
     <div tree-node node-title="{{node.title}}" ng-class="{ expanded : node.expand , collapsed: !node.expand, hidden: node.hidden, current:node.current }">
-        <div tree-node-title ng-click="nodeClicked(node)" ng-class="{ current:node.current}" title="{{node.title}}">
+        <div tree-node-title ng-click="nodeClicked(node)" ng-class="{ current: current(node)}" title="{{node.title}}">
 
             <a ng-show="node.href && !current(node)" href="{{node.href}}" class="{{node.icon}}">{{node.title}}</a>
             <span ng-show="!node.href || current(node)" class="{{node.icon}}">{{node.title}}</span>
