@@ -106,13 +106,17 @@
                 border-bottom: 1px solid #CECECE;
                 border-right: 1px solid #D7D7D7;
                 cursor: pointer;
-                &:hover {
+                &:hover, &.current {
                     border-bottom: 1px solid $ACTIVE_COLOR;
                     &, &>a, &>a:hover {
 
                         color: $ACTIVE_COLOR;
                         text-decoration:none;
                     }
+                }
+
+                &.current span{
+                    color:$ACTIVE_COLOR;
                 }
 
                 .fa:before {
