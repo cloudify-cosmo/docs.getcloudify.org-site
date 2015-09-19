@@ -3,7 +3,7 @@ angular.module('getcloudify').directive('gsSummaryBar', function( ){
     return {
         restrict: 'A',
         replace:false,
-        template: '<ul  class="nav nav-pills" style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; padding:25px 0;" id="summarypanel"><li ng-repeat="item in items"><a href="#{{item.id}}">{{item.text}}</a></li></ul>',
+        template: '<ul  class="nav nav-pills" style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; padding:25px 0;" id="summarypanel" ng-show="items.length > 0"><li ng-repeat="item in items"><a href="#{{item.id}}">{{item.text}}</a></li></ul>',
         link: function( $scope/*, element*/ ){
 
             $scope.items = [];
