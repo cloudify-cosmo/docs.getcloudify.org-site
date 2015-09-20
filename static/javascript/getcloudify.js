@@ -11,17 +11,20 @@ angular.module('getcloudify',['ui.bootstrap','ngRoute']).config(function($locati
         controller: function(){},
         template: function( routeParams ){
 
+            function highlight(root){
+                _.each(root.find('pre code'), hljs.highlightBlock);
+            }
+
             if ( firstLoadPost ){
+                highlight(firstLoadPost);
                 var result = firstLoadPost.html();
                 firstLoadPost = null;
+
                 return result;
             }
             return $http.get('/' + routeParams.doc).then(function( result ){
                  var post = angular.element(result.data).find('.post');
-
-                var blocks = post.find('pre code');
-                _.each(blocks, hljs.highlightBlock);
-
+                highlight(post);
                 return post.html();
             });
         }
