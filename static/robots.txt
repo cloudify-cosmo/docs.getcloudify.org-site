@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://docs.getcloudify.org/sitemap.xml
