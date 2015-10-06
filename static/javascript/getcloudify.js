@@ -1,4 +1,4 @@
-angular.module('getcloudify',['ui.bootstrap','ngRoute']).config(function($locationProvider, $routeProvider ){
+angular.module('getcloudify',['ui.bootstrap','ngRoute', 'ngSwiftype']).config(function($locationProvider, $routeProvider ){
     //$locationProvider.hashPrefix('!'); // this will make anchor links active again! yey!!
     $locationProvider.html5Mode( { enabled: true, requireBase: false} );
 
@@ -12,7 +12,12 @@ angular.module('getcloudify',['ui.bootstrap','ngRoute']).config(function($locati
         template: function( routeParams ){
 
             function highlight(root){
-                _.each(root.find('pre code'), hljs.highlightBlock);
+                _.each(root.find('pre code'), function(elem){
+
+                    $(elem).html($(elem).html().trim()); // remove extra lines hugo adds in pre/code..
+
+                    hljs.highlightBlock(elem)
+                });
             }
 
             if ( firstLoadPost ){
