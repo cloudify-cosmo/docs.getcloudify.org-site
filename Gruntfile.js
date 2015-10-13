@@ -12,6 +12,7 @@ module.exports = function (grunt) {
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/lodash/dist/lodash.min.js',
         'bower_components/angular/angular.min.js',
+        'bower_components/guy-mograbi-at-gigaspaces/dist/ng-swiftype.js',
         'bower_components/angular-route/angular-route.min.js',
         'bower_components/angular-bootstrap/ui-bootstrap.min.js',
         'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
