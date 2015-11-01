@@ -166,6 +166,11 @@
                     left: 10px;
                     top:6px;
                 }
+
+                .dropdown-menu {
+                    max-height: 400px;
+                    overflow-y: auto;
+                }
             }
 
         }

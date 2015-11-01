@@ -1,5 +1,3 @@
-
-docsIsOpen = {{docsIsOpen}}, name = {{name}}
 <nav class="navbar">
     <div class="content">
         <div class="container">
@@ -9,9 +7,12 @@ docsIsOpen = {{docsIsOpen}}, name = {{name}}
                     <i class="fa fa-download"></i> <span>download</span>
                 </a>
 
+                <div class="navbar-search">
+                    <input type="text"  autocomplete="off" autocorrect="off" autocapitalize="off"
+                           typeahead-template-url="/views/directives/search/searchItem.html"
 
-                <div class="navbar-search swiftype-autocomplete" engine-key="4Bepa_eR9C3qKoub7af9" swiftype-term="term">
-                    <input type="text"  autocomplete="off" autocorrect="off" autocapitalize="off"  ng-model="term">
+                           typeahead="result as result.title for result in getSearchResults($viewValue)" ng-model="term">
+                    <!--typeahead-template-url="customTemplate.html"-->
                 </div>
 
                 <a class="navbar-btn green" href="http://getcloudify.org/widget.html" title="Try Cloudify Now">
