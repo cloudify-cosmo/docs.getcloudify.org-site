@@ -10,7 +10,7 @@
                 <div class="navbar-search">
                     <input type="text"  autocomplete="off" autocorrect="off" autocapitalize="off"
                            typeahead-template-url="/views/directives/search/searchItem.html"
-
+                           typeahead-on-select="goToSearchItem($item, $model, $label)"
                            typeahead="result as result.title for result in getSearchResults($viewValue)" ng-model="term">
                     <!--typeahead-template-url="customTemplate.html"-->
                 </div>
