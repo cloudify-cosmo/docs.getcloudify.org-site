@@ -482,3 +482,16 @@ hr.thin {
         bottom: 0;
     }
 }
+
+@media (max-width:1650px){
+    [cfy-navbar]>.navbar>.content{
+        margin-left:0;
+    }
+}
+
+@media (min-width:1650px){
+    [cfy-navbar]>.navbar>.content{
+        padding: 2rem 3rem 0;
+        margin-left: 25%;
+    }
+}
