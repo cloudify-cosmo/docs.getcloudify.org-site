@@ -263,7 +263,7 @@ module.exports = function (grunt) {
             },
             javascript: {
                 files: ['static/javascript/**/*.js'],
-                tasks: ['readConfiguration','concat','uglify']
+                tasks: ['buildJavascript']
             }
         }
     });
@@ -370,6 +370,7 @@ module.exports = function (grunt) {
     grunt.registerTask('upload', ['readS3Keys', 'aws_s3:upload']);
     grunt.registerTask('default', 'build');
 
+    grunt.registerTask('buildJavascript', ['readConfiguration','concat','uglify']);
     grunt.registerTask('watchJavascript', ['readConfiguration','watch:javascript']);
     grunt.registerTask('watchSass', ['readConfiguration','watch:sass']);
     grunt.registerTask('watchSync', ['readConfiguration','watch:sync']);
