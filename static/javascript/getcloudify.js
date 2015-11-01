@@ -1,4 +1,4 @@
-angular.module('getcloudify',['ui.bootstrap','ngRoute', 'ngSwiftype']).config(function($locationProvider, $routeProvider ){
+angular.module('getcloudify',['ui.bootstrap','ngRoute']).config(function($locationProvider, $routeProvider ){
     //$locationProvider.hashPrefix('!'); // this will make anchor links active again! yey!!
     $locationProvider.html5Mode( { enabled: true, requireBase: false} );
 
