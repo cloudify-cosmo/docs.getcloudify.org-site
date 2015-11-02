@@ -29,6 +29,9 @@ angular.module('getcloudify',['ui.bootstrap','ngRoute']).config(function($locati
             }
             return $http.get('/' + routeParams.doc).then(function( result ){
                  var post = angular.element(result.data).find('.post');
+
+                //http://stackoverflow.com/questions/23681427/how-to-get-title-tag-using-jquery
+                document.title = $(result.data).filter('title').text();
                 highlight(post);
                 return post.html();
             });
