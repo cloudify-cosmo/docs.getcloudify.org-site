@@ -1,0 +1,43 @@
+<script>
+<!-- store pages hierarchy in a js object -->
+pagesTree = [];
+
+{{ $current := . }}
+
+{{ $.Scratch.Add "sidebar" .Site.Menus.docs }}
+{{ if eq .Section "intro"}}
+{{ $.Scratch.Set "sidebar" .Site.Menus.intro }}
+{{ end }}
+
+{{ range $entry := $.Scratch.Get "sidebar" }}
+{{ $section_id := $entry.Identifier }}
+{{ $section_name := $entry.Name }}
+var node = {};
+node.title = '{{ $section_name }}';
+node.children = [];
+{{ range where $.Site.Pages "Section" $section_id }}
+{{ if and (ne .LinkTitle "") (ne .Draft true) }}
+node.children.push({
+  url: '{{ .Permalink }}',
+  title: '{{ .LinkTitle }}'
+});
+{{ if eq $current.Section $section_id }}
+node.active = true;
+{{ end }}
+{{ end }}
+{{ end }}
+pagesTree.push(node);
+{{ end }}
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery.ba-hashchange.min.js"></script>
+<script src="/js/jquery.swiftype.search.js"></script>
+<script src="/js/jquery.swiftype.autocomplete.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootswatch.js"></script>
+<script src="/js/tree.js"></script>
+<script src="/js/sidebar.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/searchbox.js"></script>
+</body>
+</html>
