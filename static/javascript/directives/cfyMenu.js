@@ -66,26 +66,28 @@ angular.module('getcloudify').directive('cfyMenu', function( $http, $log, CfyVer
             //
             //// todo, need to do this per version!
             var categoriesOrder = [ // this is just for the order
-                { 'title' : 'installation', icon: 'fa fa-download'},
-                { 'title' : 'a quick tutorial', icon: 'fa fa-bicycle'},
-                { 'title' : 'what is cloudify?', icon: 'fa fa-cloud'},
-                { 'title': 'Getting Started', 'icon': 'fa fa-road'},
-                { 'title': 'Product Overview', 'icon' : 'fa fa-eye'},
-                { 'title' : 'Command-Line Interface', 'icon' : 'fa fa-terminal' },
-                { 'title' : 'Web Interface', 'icon' : 'fa fa-globe' },
-                { 'title' : 'Manager Blueprints', 'icon' : 'fa fa-inbox' },
-                { 'title' : 'Blueprints', 'icon' : 'fa fa-map' },
-                { 'title' : 'Blueprints DSL', 'icon' : 'fa fa-language' },
-                { 'title' : 'Workflows', 'icon' : 'fa fa-random' },
-                { 'title' : 'Plugins', 'icon' : 'fa fa-plug' },
+                // { 'title' : 'What is Cloudify?', icon: 'fa fa-cloud'},
+                { 'title': 'Intro', 'icon': 'fa fa-road'},
+                { 'title': 'Docs', 'icon': 'fa fa-road'},
+                // { 'title' : 'Installation', icon: 'fa fa-download'},
+                // { 'title' : 'a quick tutorial', icon: 'fa fa-bicycle'},
+                // { 'title': 'Cloudify Manager', 'icon': 'fa fa-eye'},
+                // { 'title': 'Product Overview', 'icon' : 'fa fa-eye'},
+                // { 'title' : 'Command-Line Interface', 'icon' : 'fa fa-terminal' },
+                // { 'title' : 'Web Interface', 'icon' : 'fa fa-globe' },
+                // { 'title' : 'Manager Blueprints', 'icon' : 'fa fa-inbox' },
+                // { 'title' : 'Blueprints', 'icon' : 'fa fa-map' },
+                // { 'title' : 'Blueprints DSL', 'icon' : 'fa fa-language' },
+                // { 'title' : 'Workflows', 'icon' : 'fa fa-random' },
+                // { 'title' : 'Plugins', 'icon' : 'fa fa-plug' },
                 //{ 'id' : 'Official Plugins', 'icon' : 'fa fa-diamond' },
                 //{ 'id' : 'Contributed Plugins', 'icon' : 'fa fa-gift' },
-                { 'title' : 'Policies', 'icon' : 'fa fa-map-signs' },
-                { 'title' : 'Agents', 'icon' : 'fa fa-suitcase' },
-                { 'title' : 'Guides', 'icon' : 'fa fa-book' },
-                { 'title' : 'Reference', 'icon' : 'fa fa-graduation-cap' },
+                // { 'title' : 'Policies', 'icon' : 'fa fa-map-signs' },
+                // { 'title' : 'Agents', 'icon' : 'fa fa-suitcase' },
+                // { 'title' : 'Guides', 'icon' : 'fa fa-book' },
+                // { 'title' : 'Reference', 'icon' : 'fa fa-graduation-cap' },
                 { 'title' : 'APIs', 'icon' : 'fa fa-cubes' },
-                { 'title' : 'Troubleshooting','icon' : 'fa fa-life-ring' }
+                // { 'title' : 'Troubleshooting','icon' : 'fa fa-life-ring' }
             ];
             //
             //// use lower case to overcome mistakes. Product overview and Product Overview should be treated the same.
