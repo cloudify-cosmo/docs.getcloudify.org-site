@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>{{ .Site.Title }}</title>
-  <base href="{{ getenv "DOCS_SITE_BASE_URL" }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
-  <link rel="stylesheet" href="/css/hugo-bootswatch.css">
-  <link rel="stylesheet" href="/css/bootstrap-override.css">
-  <link rel="stylesheet" href="/css/navbar.css">
-  <link rel="stylesheet" href="/css/sidebar.css">
-  <link rel="stylesheet" href="/css/toc.css">
-  <link rel="stylesheet" href="/css/main-layout.css">
-  <link rel="stylesheet" href="/css/searchbox.css">
+  <link rel="stylesheet" href="{{ relURL "css/bootstrap.min.css" }}" media="screen">
+  <link rel="stylesheet" href="{{ relURL "css/hugo-bootswatch.css" }}">
+  <link rel="stylesheet" href="{{ relURL "css/bootstrap-override.css" }}">
+  <link rel="stylesheet" href="{{ relURL "css/navbar.css" }}">
+  <link rel="stylesheet" href="{{ relURL "css/sidebar.css" }}">
+  <link rel="stylesheet" href="{{ relURL "css/toc.css" }}">
+  <link rel="stylesheet" href="{{ relURL "css/main-layout.css" }}">
+  <link rel="stylesheet" href="{{ relURL "css/searchbox.css" }}">
   {{ with .Site.Params.googleAnalytics }}
   {{ "<!-- Google Analytics -->" | safeHTML }}
   <script>

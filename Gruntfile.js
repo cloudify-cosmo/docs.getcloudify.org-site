@@ -3,6 +3,8 @@ var request = require('request');
 var _ = require('lodash');
 var path = require('path');
 
+var baseURL = process.env['DOCS_SITE_BASE_URL'];
+
 module.exports = function (grunt) {
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -196,7 +198,7 @@ module.exports = function (grunt) {
       stdout: true
     },
     build: {
-      command: 'hugo -d public/ '
+      command: 'hugo -d public/ ' + (baseURL ? " --baseUrl=" + baseURL : "")
     }
 
   },
@@ -229,7 +231,7 @@ module.exports = function (grunt) {
   },
   open: {
     devserver: {
-      path: 'http://localhost:1313'
+      path: baseURL || 'http://localhost:1313' 
     }
   },
 
@@ -289,7 +291,7 @@ grunt.registerTask('listAllBranches', function () {
 
 grunt.registerTask('hugoServer', function(){
   var spawn = require('child_process').spawn;
-  var server = spawn('hugo' , ['server','--buildDrafts','--watch']);
+  var server = spawn('hugo' , ['server','--buildDrafts','--watch', baseURL ? '--baseUrl=' + baseURL : "" ]);
   server.stdout.on('data', function(data) {
     console.log(data.toString());
   });
