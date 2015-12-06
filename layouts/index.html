@@ -1,4 +1,5 @@
+<!-- this page decides the default entrypoint to the version -->
 <script>
-    // remove trailing slash and append default location
-    document.location = ( document.location.href.replace(/\/$/, '') + '/3.3.0/' );
+     // remove trailing slash and append default location
+    document.location = ( document.location.href.replace(/\/$/, '') + '{{ .Site.Params.homepage }}' );
 </script>

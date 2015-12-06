@@ -1,0 +1,86 @@
+.sidebar {
+  max-height: 90%;
+  overflow: auto;
+
+  @media (min-width: 1200px)
+  {
+    & {
+      width: 215px;
+    }
+  }
+
+  @media (max-width: 1200px)
+  {
+    & {
+      width: 150px;
+    }
+  }
+
+
+}
+
+.sidebar-filter {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABL0lEQVQ4T2PsmjlT+fuXr9f//f/PyoAFiElKYhNmYPjHcPvXn59mjCDZjhkz/L9/+bqegYEBzEcG2Az49+/fRwZmJovcqKgbcA2d06e3fP/6rfo/YQP+Mf5n8smKidgOUopiY9vUqbt/fv/hgtcF/xnKs2OiumBqMJzcPGnywz+/fsnBFKB44f+/JdkxMbHIFmAY0DBnjhDz58+P//z9xwVSCDPgL8P/07y/ftklJib+wGsASLJt5kzz31++Hfv3/x8TyIB/DAzPGZgYTXIjI5+hBzKGC2AKpixdOuX3z9/x0pKSV5gY//eHeHiswhafOA1YsmHTpI9fv+RqyCky/P/PGOpiZ7Fm1AB6h8GidTvFfv37dkxRXEKZrFiARdnewycSGRj/v3C2sQRnHnQAAC6Oqe57rybMAAAAAElFTkSuQmCC) no-repeat 7px 9px;
+  padding-left: 30px;
+}
+
+
+.tree-node {
+
+  .tree {
+    display: none;
+  }
+
+  .tree-node-body {
+
+    cursor: pointer;
+    label { cursor: pointer; }
+
+    i.fa:before {
+      content: "\f0da";
+    }
+  }
+
+  &.tree-expanded {
+
+    .tree {
+      display: block;
+    }
+
+    .tree-node-body {
+      i.fa:before {
+        content: "\f0d7";
+      }
+    }
+  }
+}
+
+.tree {
+  li {
+    cursor: pointer;
+    padding-top: 5px;
+    text-transform: capitalize;
+
+  }
+
+  li a {
+
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+  }
+
+  .active {
+    background: #ddd;
+    a {
+      color: #000;
+    }
+  }
+
+}
+
+.tree-node {
+  .tree-node {
+    padding-left: 1em;
+  }
+}

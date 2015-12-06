@@ -1,0 +1,42 @@
+$padding-size: 4px;
+$border-size: 2px;
+$highlight-color: #1e4584;
+
+.toc {
+
+  ul {
+    padding-left: 0;
+  }
+
+  li  {
+    list-style: none;
+
+    a {
+
+      padding-bottom: 2px;
+      padding-top: 2px;
+
+    }
+  }
+
+  .toc-level-2 {
+    display: none;
+
+  }
+
+  .toc-entry.active {
+
+    .toc-level-2 {
+      a {
+        padding-left: 2em;
+      }
+      display: block;
+    }
+
+    > a {
+      border-left: 2px solid $highlight-color;
+      color: $highlight-color;
+      font-weight: bold;
+    }
+  }
+}

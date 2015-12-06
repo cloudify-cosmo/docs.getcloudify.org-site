@@ -1,0 +1,23 @@
+.navbar-default {
+
+  // TODO: remove it after refactoring the navbar buttons style
+  a:hover {
+    text-decoration: none;
+  }
+
+  .navbar-nav {
+    li {
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar-btn {
+    text-transform: uppercase;
+  }
+
+  .navbar-brand {
+    background: url('//getcloudify.org/img/logoSmall.png') no-repeat bottom left;
+    height: 48px;
+    width: 62px;
+  }
+}
