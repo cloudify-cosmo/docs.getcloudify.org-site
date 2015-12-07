@@ -21,7 +21,7 @@ homepage="/intro/what-is-cloudify/"
     name = "intro"
     weight = -110
     identifier = "intro"
-    url = "/intro/what-is-cloudify"    
+    url = "/intro/what-is-cloudify"
 
 [[menu.main]]
     name = "docs"
@@ -125,6 +125,12 @@ homepage="/intro/what-is-cloudify/"
 # 'identifier' must match the section's directory name
 # 'name' is how you want to display the section on screen
 # 'weight' sets the order of sections in docs (smaller is higher)
+[[menu.docs]]
+    identifier = "intro"
+    name = "introduction"
+    url = "/intro/what-is-cloudify"
+    weight = 0
+
 [[menu.docs]]
   identifier = "installation"
   name = "installation"

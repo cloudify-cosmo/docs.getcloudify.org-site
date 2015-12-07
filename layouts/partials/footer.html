@@ -5,10 +5,6 @@ pagesTree = [];
 {{ $current := . }}
 
 {{ $.Scratch.Add "sidebar" .Site.Menus.docs }}
-{{ if eq .Section "intro"}}
-{{ $.Scratch.Set "sidebar" .Site.Menus.intro }}
-{{ end }}
-
 {{ range $entry := $.Scratch.Get "sidebar" }}
 {{ $section_id := $entry.Identifier }}
 {{ $section_name := $entry.Name }}
