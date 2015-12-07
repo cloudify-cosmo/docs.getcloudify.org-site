@@ -231,7 +231,7 @@ module.exports = function (grunt) {
   },
   open: {
     devserver: {
-      path: baseURL || 'http://localhost:1313' 
+      path: baseURL || 'http://localhost:1313'
     }
   },
 
@@ -243,7 +243,7 @@ module.exports = function (grunt) {
         {
           cwd: '<%= build.content.root %>/static/images',
           src: ['**'],
-          dest: 'static/<%= build.content.version %>/images'
+          dest: 'static/images'
         } // includes files in path and its subdirs
 
       ],

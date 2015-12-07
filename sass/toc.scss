@@ -4,6 +4,8 @@ $highlight-color: #1e4584;
 
 .toc {
 
+  max-width: 210px;
+
   ul {
     padding-left: 0;
   }
@@ -13,6 +15,11 @@ $highlight-color: #1e4584;
 
     a {
 
+      &:hover, &:focus {
+        background: inherit;
+        color: #39B9D4;
+      }
+
       padding-bottom: 2px;
       padding-top: 2px;
 
@@ -21,7 +28,14 @@ $highlight-color: #1e4584;
 
   .toc-level-2 {
     display: none;
+    font-size: small;
 
+  }
+
+  .toc-entry {
+    > a {
+      border-left: 2px solid transparent;
+    }
   }
 
   .toc-entry.active {
@@ -34,9 +48,8 @@ $highlight-color: #1e4584;
     }
 
     > a {
-      border-left: 2px solid $highlight-color;
+      border-left-color: $highlight-color;
       color: $highlight-color;
-      font-weight: bold;
     }
   }
 }
