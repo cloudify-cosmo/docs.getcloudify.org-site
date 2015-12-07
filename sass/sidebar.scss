@@ -65,14 +65,19 @@
 
   li a {
 
+    &:hover {
+      background: initial;
+      color: #39b9d4;
+    }
     padding-bottom: 4px;
     padding-top: 4px;
 
   }
 
   .active {
-    background: #ddd;
     a {
+      background: #ddd !important;
+      border-radius: 4px;
       color: #000;
     }
   }

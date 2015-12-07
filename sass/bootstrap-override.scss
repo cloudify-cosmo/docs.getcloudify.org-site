@@ -15,6 +15,16 @@ img {
   color: #fff;
 }
 
+.btn.btn-action {
+  background-color: #FC7520;
+  border-color: #A75827;
+  color: #fff;
+
+  &:hover {
+    background-color: #C34F06;
+  }
+}
+
 .navbar-default {
   background: #323235;
   font-size: $font-size;
@@ -53,7 +63,7 @@ img {
 
 .nav>li>a:focus, .nav>li>a:hover { background: $cfy-color; color: #fff; }
 
-.btn,
-.form-control {
-  border-radius: 0;
+pre {
+  background-color: inherit;
+  border: inherit;
 }
