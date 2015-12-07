@@ -1,5 +1,11 @@
 <!-- this page decides the default entrypoint to the version -->
 <script>
-     // remove trailing slash and append default location
+
+    // redirect "/" to defined homepage
+    {{ with getenv "REDIRECT_VERSION"}}
+    document.location = '/' + {{ . }} + '{{ $.Site.Params.homepage }}'
+    {{ else }}
     document.location = ( document.location.href.replace(/\/$/, '') + '{{ .Site.Params.homepage }}' );
+    {{ end }}
+
 </script>
