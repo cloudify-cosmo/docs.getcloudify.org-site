@@ -21,26 +21,7 @@ homepage="/intro/what-is-cloudify/"
     name = "intro"
     weight = -110
     identifier = "intro"
-    [[menu.main]]
-        name = "what is cloudify"
-        parent = "intro"
-        weight = 0
-        url = "/intro/what-is-cloudify"
-    [[menu.main]]
-        name = "installing cloudify"
-        parent = "intro"
-        weight = 1
-        url = "/intro/installation"
-    [[menu.main]]
-        name = "jumpstart"
-        parent = "intro"
-        weight = 2
-        url = "/intro/getting-started"
-    [[menu.main]]
-        name = "your first blueprint"
-        parent = "intro"
-        weight = 3
-        url = "/intro/blueprints"
+    url = "/intro/what-is-cloudify"    
 
 [[menu.main]]
     name = "docs"
@@ -49,7 +30,7 @@ homepage="/intro/what-is-cloudify/"
         name = "3.3"
         parent = "docs"
         weight = 0
-        url = "/"
+        url = "/installation/prerequisites"
     [[menu.main]]
         name = "3.2"
         parent = "docs"
