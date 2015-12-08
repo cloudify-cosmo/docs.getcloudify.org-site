@@ -67,3 +67,10 @@ pre {
   background-color: inherit;
   border: inherit;
 }
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 5px;
+}
