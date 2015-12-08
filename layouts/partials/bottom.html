@@ -1,0 +1,41 @@
+<script>
+<!-- store pages hierarchy in a js object -->
+pagesTree = [];
+
+{{ $current := . }}
+
+{{ $.Scratch.Add "sidebar" .Site.Menus.docs }}
+{{ range $entry := $.Scratch.Get "sidebar" }}
+{{ $section_id := $entry.Identifier }}
+{{ $section_name := $entry.Name }}
+var node = {};
+node.title = '{{ $section_name }}';
+node.children = [];
+{{ range where $.Site.Pages "Section" $section_id }}
+{{ if and (ne .LinkTitle "") (ne .Draft true) }}
+node.children.push({
+  url: '{{ .Permalink }}',
+  title: '{{ .LinkTitle }}'
+});
+{{ if eq $current.Section $section_id }}
+node.active = true;
+{{ end }}
+{{ end }}
+{{ end }}
+pagesTree.push(node);
+{{ end }}
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="{{ relURL "js/jquery.ba-hashchange.min.js" }}"></script>
+<script src="{{ relURL "js/jquery.swiftype.search.js" }}"></script>
+<script src="{{ relURL "js/jquery.swiftype.autocomplete.js" }}"></script>
+<script src="{{ relURL "js/bootstrap.min.js" }}"></script>
+<script src="{{ relURL "js/bootswatch.js" }}"></script>
+<script src="{{ relURL "js/tree.js" }}"></script>
+<script src="{{ relURL "js/sidebar.js" }}"></script>
+<script src="{{ relURL "js/toc.js" }}"></script>
+<script src="{{ relURL "js/searchbox.js" }}"></script>
+<script src="{{ relURL "js/highlight.pack.js" }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

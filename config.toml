@@ -18,12 +18,6 @@ homepage="/intro/what-is-cloudify/"
 
 # this is where you control the top menu
 [[menu.main]]
-    name = "intro"
-    weight = -110
-    identifier = "intro"
-    url = "/intro/what-is-cloudify"
-
-[[menu.main]]
     name = "docs"
     weight = -100
     [[menu.main]]
@@ -109,17 +103,6 @@ homepage="/intro/what-is-cloudify/"
     pre = "<strong>"
     post = "</strong> <i class='fa fa-external-link-square'></i>"
     url = "http://gigaspaces.com"
-
-
-# this is where you control the order of sections in intro
-# 'identifier' must match the section's directory name
-# 'name' is how you want to display the section on screen
-# 'weight' sets the order of sections in intro (smaller is higher)
-[[menu.intro]]
-    identifier = "intro"
-    name = "introduction"
-    url = "/intro/what-is-cloudify"
-    weight = 0
 
 # this is where you control the order of sections in docs
 # 'identifier' must match the section's directory name

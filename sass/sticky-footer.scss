@@ -1,0 +1,38 @@
+//  this stylesheet lets a sticky footer play nicely with a fixed sidebar
+//  if you change the header/footer height, make sure to change the variables here
+
+$footer-height: 60px;
+$header-height: 51px;
+$sidebar-top-offset: 25px;
+$sidebar-bottom-offset: 15px;
+
+html,
+body {
+  height: 100%;
+}
+
+.sidebar {
+  bottom: $footer-height + $sidebar-bottom-offset;
+  top: $header-height + $sidebar-top-offset;
+}
+
+.wrap {
+  height: 100% auto !important;
+  margin: 0 auto -1 * $footer-height;
+  min-height: 100%;
+}
+
+.push {
+  clear: both;
+  height: $footer-height;
+}
+
+.footer {
+  background: #000;
+  clear: both;
+  color: #fff;
+  font-size: small;
+  height: $footer-height;
+  padding: 15px 5px;
+  text-align: center;
+}

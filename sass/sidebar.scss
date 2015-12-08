@@ -1,13 +1,5 @@
 .sidebar {
-  max-height: 90%;
   overflow: auto;
-
-  @media (min-width: 1200px)
-  {
-    & {
-      width: 215px;
-    }
-  }
 
   @media (max-width: 1200px)
   {
@@ -16,7 +8,19 @@
     }
   }
 
+  @media (min-width: 1200px)
+  {
+    & {
+      width: 180px;
+    }
+  }
 
+  @media (min-width: 1400px)
+  {
+    & {
+      width: 215px;
+    }
+  }
 }
 
 .sidebar-filter {

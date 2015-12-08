@@ -16,8 +16,19 @@
   }
 
   .navbar-brand {
-    background: url('//getcloudify.org/img/logoSmall.png') no-repeat bottom left;
+    color: #fff;
+    display: inline;
     height: 48px;
-    width: 62px;
+    width: 150px;
+
+    &:hover {
+      color: #fff;
+    }
+
+    img {
+      display: inline;
+      width: 30px;
+    }
+
   }
 }
