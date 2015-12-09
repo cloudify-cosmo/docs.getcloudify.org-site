@@ -130,51 +130,49 @@ homepage="/intro/what-is-cloudify/"
   weight = 3
 
 [[menu.docs]]
-  identifier = "workflows"
-  name = "workflows"
+  identifier = "plugins"
+  name = "plugins"
   weight = 4
 
 [[menu.docs]]
-  identifier = "plugins"
-  name = "plugins"
+  identifier = "workflows"
+  name = "workflows"
   weight = 5
 
 [[menu.docs]]
-  identifier = "manager_intro"
-  name = "manager introduction"
-  weight = 6
-
-[[menu.docs]]
-  identifier = "manager_webui"
-  name = "manager web interface"
-  weight = 7
-
-[[menu.docs]]
-  identifier = "agents"
-  name = "agents"
-  weight = 8
-
-[[menu.docs]]
   identifier = "manager"
-  name = "manager"
-  weight = 9
-
-[[menu.docs]]
-  identifier = "manager_policies"
-  name = "manager policies"
-  weight = 10
+  name = "the cloudify manager"
+  weight = 6
 
 [[menu.docs]]
   identifier = "manager_architecture"
   name = "manager architecture"
-  weight = 11
+  weight = 7
+
+
+[[menu.docs]]
+  identifier = "manager_webui"
+  name = "manager web interface"
+  weight = 8
+
+[[menu.docs]]
+  identifier = "manager_policies"
+  name = "manager policies"
+  weight = 9
+
+
+[[menu.docs]]
+  identifier = "agents"
+  name = "agents"
+  weight = 10
+
 
 [[menu.docs]]
   identifier = "composer"
-  name = "composer"
-  weight = 12
+  name = "blueprint composer"
+  weight = 11
 
 [[menu.docs]]
   identifier = "apis"
   name = "APIs"
-  weight = 13
+  weight = 12
