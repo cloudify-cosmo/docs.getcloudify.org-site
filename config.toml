@@ -36,73 +36,30 @@ homepage="/intro/what-is-cloudify/"
         weight = 2
         url = "http://getcloudify.org/guide/3.1/quickstart.html"
 
-[[menu.main]]
-    name = "product"
-    weight = -90
     [[menu.main]]
-        name = "download cloudify"
-        parent = "product"
-        weight = 0
-        url = "http://getcloudify.org/downloads/get_cloudify_3x.html"
-    [[menu.main]]
-        name = "about cloudify"
-        parent = "product"
-        weight = 1
-        url = "http://getcloudify.org/cloud_orchestration_cloud_automation.html"
-    [[menu.main]]
-        name = "how it works"
-        parent = "product"
-        weight = 2
-        url = "http://getcloudify.org/how-it-works.html"
-    [[menu.main]]
-        name = "cloudify roadmap"
-        parent = "product"
-        weight = 3
-        url = "http://getcloudify.org/cloudify-roadmap.html"
-    [[menu.main]]
-        name = "code examples"
-        parent = "product"
-        weight = 4
-        url = "http://getcloudify.org/examples/home.html"
-
-[[menu.main]]
-    name = "resources"
-    weight = -80
-    [[menu.main]]
-        name = "videos & tutorials"
-        parent = "resources"
-        weight = 0
+        name = "tutorials"
+        weight = -90
         url = "http://getcloudify.org/cloudifysourcetv.html"
+        
     [[menu.main]]
-        name = "events"
+        name = "training"
+        weight = -80
+        url = "http://getcloudify.org/participate.htm"
+
+    [[menu.main]]
+        name = "resources"
+        weight = -70
+    [[menu.main]]
+        name = "mailing list"
+        parent = "resources"
+        weight = 0
+        url = "https://groups.google.com/forum/#!forum/cloudify-users"
+    [[menu.main]]
+        name = "blog"
         parent = "resources"
         weight = 1
-        url = "http://getcloudify.org/participate.htm"
-    [[menu.main]]
-        name = "cloudify tumblr"
-        parent = "resources"
-        weight = 2
-        url = "http://cloudifysource.tumblr.com/"
-    [[menu.main]]
-        name = "faq"
-        parent = "resources"
-        weight = 3
-        url = "http://getcloudify.org/FAQ_cloud_devops_automation.html"
-    [[menu.main]]
-        name = "careers"
-        parent = "resources"
-        weight = 4
-        url = "http://jobs.gigaspaces.com"
-[[menu.main]]
-    name = "blog"
-    weight = -70
-    url = "http://getcloudify.org/blog"
-[[menu.main]]
-    name = ".com"
-    weight = -60
-    pre = "<strong>"
-    post = "</strong> <i class='fa fa-external-link-square'></i>"
-    url = "http://gigaspaces.com"
+        url = "http://getcloudify.org/blog/"
+   
 
 # this is where you control the order of sections in docs
 # 'identifier' must match the section's directory name
