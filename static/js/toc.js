@@ -46,7 +46,9 @@ function renderToc(source, target, options) {
 
   function jumpToLink(event) {
     event.preventDefault();
-    $($(this).attr('href'))[0].scrollIntoView();
+    var targetId = $(this).attr('href');
+    location.hash = targetId;
+    $(targetId)[0].scrollIntoView();
     scrollBy(0, -options.offset);
   }
 }
