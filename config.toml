@@ -24,7 +24,7 @@ homepage="/intro/what-is-cloudify/"
         name = "3.3"
         parent = "docs"
         weight = 0
-        url = "/installation/prerequisites"
+        url = "http://docs.getcloudify.org/3.3.0/intro/what-is-cloudify/"
     [[menu.main]]
         name = "3.2"
         parent = "docs"
