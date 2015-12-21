@@ -5,23 +5,40 @@
             alert("Disabled for localhost")
             return;
         }
-        location.href = getGithubUrl(getBranch(), location.pathname.replace(/\/$/, '.md'));
+        var branch = getBranchFromUrl();
+        var markdownFile = location.pathname.replace(/\/$/, '.md');
+        location.href = getGithubUrl(branch, markdownFile);
+
     });
 })()
 
-function getBranch() 
+function getBuildBranch(branch)
 {
-    var branch = location.pathname.split("/")[1];
-    if (branch == "dev") 
-        branch = "master";
-    versionPattern = new RegExp("\\d.\\d.\\d");
-    if (versionPattern.test(branch))
+    if (isVersionBranch(branch))
         branch += "-build";
     return branch;
 }
 
+function isVersionBranch(branch)
+{
+    var versionPattern = new RegExp("\\d.\\d.\\d");
+    return (versionPattern.test(branch))
+
+}
+
+function getBranchFromUrl() 
+{
+    var branch = location.pathname.split("/")[1];
+    if (branch == "dev") 
+        branch = "master";
+    return branch;
+}
+
 function getGithubUrl(branch, markdownFile) 
-{        
-   var repo = "https://github.com/cloudify-cosmo/docs.getcloudify.org";
-   return repo + "/edit/" + branch + "/content" + markdownFile + "#";
+{   
+    if (isVersionBranch(branch))
+        markdownFile = markdownFile.replace(branch,"")
+    var branch = getBuildBranch(branch)        
+    var repo = "https://github.com/cloudify-cosmo/docs.getcloudify.org";
+    return repo + "/edit/" + branch + "/content" + markdownFile + "#";
 }
