@@ -39,7 +39,7 @@ function Tree(data) {
  */
 function renderTree(target) {
 
-	if (self.rootNode) {
+	if (this.rootNode) {
 		throw new Error('tree has already been rendered');
 	}
 
