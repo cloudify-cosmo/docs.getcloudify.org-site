@@ -39,7 +39,7 @@ function Tree(data) {
  */
 function renderTree(target) {
 
-	if (self.rootNode) {
+	if (this.rootNode) {
 		throw new Error('tree has already been rendered');
 	}
 
@@ -84,7 +84,7 @@ function toggleNode(event) {
  * @returns
  */
 function filterTree(text) {
-	
+
 	if (!this.rootNode) {
 		throw new Error('tree must be rendered first');
 	}
@@ -117,11 +117,17 @@ function filterTree(text) {
     var $nodeDOM = $nodesDOM.eq(i);
     var $childrenDOM = $nodeDOM.find('.tree-node');
     var isNodeRelevant = false;
+    var showAllChildren = false;
+
+    // if 1st level matches, show all of its children
+    if (regexp.test(node.title)) {
+        showAllChildren = true;
+    }
 
     node.children.forEach(function(child, j) {
 
       var childDOM = $childrenDOM[j];
-      if (regexp.test(child.title)) {
+      if (showAllChildren || regexp.test(child.title)) {
         isNodeRelevant = true;
         $(childDOM).show();
       }
