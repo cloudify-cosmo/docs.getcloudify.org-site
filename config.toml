@@ -40,7 +40,7 @@ homepage="/intro/what-is-cloudify/"
         name = "tutorials"
         weight = -90
         url = "http://getcloudify.org/cloudifysourcetv.html"
-        
+
     [[menu.main]]
         name = "training"
         weight = -80
@@ -59,7 +59,7 @@ homepage="/intro/what-is-cloudify/"
         parent = "resources"
         weight = 1
         url = "http://getcloudify.org/blog/"
-   
+
 
 # this is where you control the order of sections in docs
 # 'identifier' must match the section's directory name
@@ -77,13 +77,13 @@ homepage="/intro/what-is-cloudify/"
   weight = 1
 
 [[menu.docs]]
-  identifier = "blueprints"
-  name = "blueprints"
+  identifier = "cli"
+  name = "command line interface"
   weight = 2
 
 [[menu.docs]]
-  identifier = "cli"
-  name = "command line interface"
+  identifier = "blueprints"
+  name = "blueprints"
   weight = 3
 
 [[menu.docs]]
@@ -98,7 +98,7 @@ homepage="/intro/what-is-cloudify/"
 
 [[menu.docs]]
   identifier = "manager"
-  name = "the cloudify manager"
+  name = "cloudify manager"
   weight = 6
 
 [[menu.docs]]
