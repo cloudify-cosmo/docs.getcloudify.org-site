@@ -67,66 +67,66 @@ homepage="/intro/what-is-cloudify/"
 # 'weight' sets the order of sections in docs (smaller is higher)
 [[menu.docs]]
     identifier = "intro"
-    name = "introduction"
+    name = "Introduction"
     url = "/intro/what-is-cloudify"
     weight = 0
 
 [[menu.docs]]
   identifier = "installation"
-  name = "installation"
+  name = "Installation"
   weight = 1
 
 [[menu.docs]]
   identifier = "cli"
-  name = "command line interface"
+  name = "Command Line Interface"
   weight = 2
 
 [[menu.docs]]
   identifier = "blueprints"
-  name = "blueprints"
+  name = "Blueprints"
   weight = 3
 
 [[menu.docs]]
   identifier = "plugins"
-  name = "plugins"
+  name = "Plugins"
   weight = 4
 
 [[menu.docs]]
   identifier = "workflows"
-  name = "workflows"
+  name = "Workflows"
   weight = 5
 
 [[menu.docs]]
   identifier = "manager"
-  name = "cloudify manager"
+  name = "Cloudify Manager"
   weight = 6
 
 [[menu.docs]]
   identifier = "manager_architecture"
-  name = "manager architecture"
+  name = "Manager Architecture"
   weight = 7
 
 
 [[menu.docs]]
   identifier = "manager_webui"
-  name = "manager web interface"
+  name = "Manager Web Interface"
   weight = 8
 
 [[menu.docs]]
   identifier = "manager_policies"
-  name = "manager policies"
+  name = "Manager Policies"
   weight = 9
 
 
 [[menu.docs]]
   identifier = "agents"
-  name = "agents"
+  name = "Agents"
   weight = 10
 
 
 [[menu.docs]]
   identifier = "composer"
-  name = "blueprint composer"
+  name = "Blueprint Composer"
   weight = 11
 
 [[menu.docs]]
