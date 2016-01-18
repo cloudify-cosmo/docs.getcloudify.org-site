@@ -291,7 +291,7 @@ grunt.registerTask('listAllBranches', function () {
 
 grunt.registerTask('hugoServer', function(){
   var spawn = require('child_process').spawn;
-  var server = spawn('hugo' , ['server','--buildDrafts','--watch', baseURL ? '--baseUrl=' + baseURL : "" ]);
+  var server = spawn('hugo' , ['server','--buildDrafts','--watch', baseURL ? '--baseUrl=' + baseURL : "", '--bind=0.0.0.0']);
   server.stdout.on('data', function(data) {
     console.log(data.toString());
   });
