@@ -1,0 +1,18 @@
+@import 'variables';
+
+.topbar-container {
+  background-color: #e1efff;
+  max-height: 430px;
+  overflow: auto;
+  position: fixed;
+  top: $header-height;
+  width: 100%;
+  z-index: 1;
+}
+
+.topbar {
+  border-bottom: 1px solid #000;
+  margin: 10px 0 0 0;
+  overflow: scroll;
+  padding: 0;
+}
