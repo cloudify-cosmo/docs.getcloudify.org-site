@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
+{{ partial "topbar.html" . }}
 
 <div class="wrap">
   <div class="container main-layout">
@@ -11,7 +12,7 @@
       </div>
       <div class="col-xs-12 col-md-8 content-container">
         <div class="content">
-          <button id="edit-on-github" data-toggle="popover" type="button" class="btn btn-default pull-right" 
+          <button id="edit-on-github" data-toggle="popover" type="button" class="btn btn-default pull-right hidden-xs hidden-sm"
            data-original-title="" title="Help us improve!"><i class="fa fa-github"></i>&nbsp;&nbsp;Edit On Github</button>
           <h1 id="content-title">{{ .Title }}</h1>
           <hr>
