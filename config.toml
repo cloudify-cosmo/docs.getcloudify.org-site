@@ -21,19 +21,24 @@ homepage="/intro/what-is-cloudify/"
     name = "docs"
     weight = -100
     [[menu.main]]
-        name = "3.3"
+        name = "3.3.1"
         parent = "docs"
-        weight = 0
+        weight = 1
+        url = "http://docs.getcloudify.org/3.3.1/intro/what-is-cloudify/"
+    [[menu.main]]
+        name = "3.3.0"
+        parent = "docs"
+        weight = 2
         url = "http://docs.getcloudify.org/3.3.0/intro/what-is-cloudify/"
     [[menu.main]]
         name = "3.2"
         parent = "docs"
-        weight = 1
+        weight = 3
         url = "http://getcloudify.org/guide/3.2/quickstart.html"
     [[menu.main]]
         name = "3.1"
         parent = "docs"
-        weight = 2
+        weight = 4
         url = "http://getcloudify.org/guide/3.1/quickstart.html"
 
     [[menu.main]]
