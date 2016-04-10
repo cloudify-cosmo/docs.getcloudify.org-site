@@ -27,7 +27,11 @@ var customResultRenderFunction = function(ctx, data) {
 };
 
 var customRenderFunction = function(document_type, item) {
-  return '<div class="st-result"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></div>';  
+  var version = location.pathname.split("/")[1];
+  if (item['url'].search('/' + version + '/') < 0) {
+    return;
+  }
+  return '<div class="st-result"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></div>';
 };
 
 $('.search-input').swiftypeSearch({
