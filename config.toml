@@ -21,30 +21,30 @@ homepage="/intro/what-is-cloudify/"
     name = "docs"
     weight = -100
     [[menu.main]]
-        name = "3.4.0 - EA"
+        name = "3.4.0 (Early Access)"
         parent = "docs"
         weight = 1
-        url = "http://docs.getcloudify.org/3.4.0/intro/what-is-cloudify/"
+        url = "http://docs.getcloudify.org/3.4.0/"
     [[menu.main]]
-        name = "3.3.1"
+        name = "3.3.1 (Latest GA)"
         parent = "docs"
         weight = 2
-        url = "http://docs.getcloudify.org/3.3.1/intro/what-is-cloudify/"
+        url = "http://docs.getcloudify.org/3.3.1/"
     [[menu.main]]
         name = "3.3.0"
         parent = "docs"
         weight = 3
-        url = "http://docs.getcloudify.org/3.3.0/intro/what-is-cloudify/"
+        url = "http://docs.getcloudify.org/3.3.0/"
     [[menu.main]]
         name = "3.2"
         parent = "docs"
         weight = 4
-        url = "http://getcloudify.org/guide/3.2/quickstart.html"
+        url = "http://getcloudify.org/guide/3.2/"
     [[menu.main]]
         name = "3.1"
         parent = "docs"
         weight = 5
-        url = "http://getcloudify.org/guide/3.1/quickstart.html"
+        url = "http://getcloudify.org/guide/3.1/"
 
     [[menu.main]]
         name = "tutorials"
