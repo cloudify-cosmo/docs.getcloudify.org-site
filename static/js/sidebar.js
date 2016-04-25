@@ -1,11 +1,11 @@
 // create pages tree and render it
-var t = new Tree(pagesTree);
-t.render('.sidebar');
+var sideBarTree = new Tree(pagesTree);
+sideBarTree.render('.sidebar');
 
 // bind filter box to tree filter
 $('.sidebar-filter').on('keyup', function() {
   var text = $(this).val();
-  t.filter(text);
+  sideBarTree.filter(text);
 });
 
 $('.sidebar').affix({
