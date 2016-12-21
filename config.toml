@@ -31,10 +31,10 @@ homepage="/intro/what-is-cloudify/"
         weight = 11
         url = "http://docs.getcloudify.org/3.4.1/"
     [[menu.main]]
-        name = "3.5.0 (Early Access)"
+        name = "4.0.0 (Early Access)"
         parent = "docs"
         weight = 12
-        url = "http://docs.getcloudify.org/3.5.0/"
+        url = "http://docs.getcloudify.org/4.0.0/"
     [[menu.main]]
         name = "3.3.1"
         parent = "docs"
@@ -50,11 +50,6 @@ homepage="/intro/what-is-cloudify/"
         parent = "docs"
         weight = 40
         url = "http://getcloudify.org/guide/3.2/"
-    [[menu.main]]
-        name = "3.1"
-        parent = "docs"
-        weight = 50
-        url = "http://getcloudify.org/guide/3.1/"
 
     [[menu.main]]
         name = "tutorials"
