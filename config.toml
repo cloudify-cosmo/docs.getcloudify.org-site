@@ -64,15 +64,21 @@ homepage="/intro/what-is-cloudify/"
     [[menu.main]]
         name = "resources"
         weight = -70
+        
+    [[menu.main]]
+        name = "examples catalog"
+        parent = "resources"
+        weight = 0
+        url = "http://getcloudify.org/examples/home.html"
     [[menu.main]]
         name = "mailing list"
         parent = "resources"
-        weight = 0
+        weight = 1
         url = "https://groups.google.com/forum/#!forum/cloudify-users"
     [[menu.main]]
         name = "blog"
         parent = "resources"
-        weight = 1
+        weight = 2
         url = "http://getcloudify.org/blog/"
 
 
