@@ -26,7 +26,7 @@ homepage="/intro/what-is-cloudify/"
         weight = 10
         url = "http://docs.getcloudify.org/3.4.0/"
     [[menu.main]]
-        name = "3.4.1 (Early Access)"
+        name = "3.4.1"
         parent = "docs"
         weight = 11
         url = "http://docs.getcloudify.org/3.4.1/"
