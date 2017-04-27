@@ -62,9 +62,9 @@ homepage="/intro/what-is-cloudify/"
         url = "http://cloudify.co/videos"
 
     [[menu.main]]
-        name = "training"
+        name = "Labs"
         weight = -80
-        url = "http://cloudify.co/events"
+        url = "http://cloudify.co/labs"
 
     [[menu.main]]
         name = "resources"
