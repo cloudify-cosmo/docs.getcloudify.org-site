@@ -21,7 +21,12 @@ homepage="/intro/what-is-cloudify/"
     name = "docs"
     weight = -100
     [[menu.main]]
-        name = "3.4.2 (Latest GA)"
+        name = "4.0.0 (Latest GA)"
+        parent = "docs"
+        weight = 8
+        url = "http://docs.getcloudify.org/4.0.0/"
+    [[menu.main]]
+        name = "3.4.2"
         parent = "docs"
         weight = 9
         url = "http://docs.getcloudify.org/3.4.2/"
@@ -35,11 +40,6 @@ homepage="/intro/what-is-cloudify/"
         parent = "docs"
         weight = 11
         url = "http://docs.getcloudify.org/3.4.0/"
-    [[menu.main]]
-        name = "4.0.0 (Early Access)"
-        parent = "docs"
-        weight = 12
-        url = "http://docs.getcloudify.org/4.0.0/"
     [[menu.main]]
         name = "3.3.1"
         parent = "docs"
