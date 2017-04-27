@@ -59,12 +59,12 @@ homepage="/intro/what-is-cloudify/"
     [[menu.main]]
         name = "tutorials"
         weight = -90
-        url = "http://getcloudify.org/cloudifysourcetv.html"
+        url = "http://cloudify.co/videos"
 
     [[menu.main]]
         name = "training"
         weight = -80
-        url = "http://getcloudify.org/participate.htm"
+        url = "http://cloudify.co/events"
 
     [[menu.main]]
         name = "resources"
@@ -74,7 +74,7 @@ homepage="/intro/what-is-cloudify/"
         name = "examples catalog"
         parent = "resources"
         weight = 0
-        url = "http://getcloudify.org/examples/home.html"
+        url = "http://cloudify.co/examples/home.html"
     [[menu.main]]
         name = "mailing list"
         parent = "resources"
@@ -84,7 +84,7 @@ homepage="/intro/what-is-cloudify/"
         name = "blog"
         parent = "resources"
         weight = 2
-        url = "http://getcloudify.org/blog/"
+        url = "http://cloudify.co/blog/"
 
 
 # this is where you control the order of sections in docs
