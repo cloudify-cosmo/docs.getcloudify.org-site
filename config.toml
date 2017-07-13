@@ -21,10 +21,15 @@ homepage="/intro/what-is-cloudify/"
     name = "docs"
     weight = -100
     [[menu.main]]
-        name = "4.0.0 (Latest GA)"
+        name = "4.1.0 (Latest GA)"
+        parent = "docs"
+        weight = 7
+        url = "http://docs.getcloudify.org/4.1.0/"
+    [[menu.main]]
+        name = "4.0.0"
         parent = "docs"
         weight = 8
-        url = "http://docs.getcloudify.org/4.0.0/"
+        url = "http://docs.getcloudify.org/4.0.0/"        
     [[menu.main]]
         name = "3.4.2"
         parent = "docs"
