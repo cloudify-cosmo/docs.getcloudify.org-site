@@ -45,12 +45,6 @@ homepage="/intro/what-is-cloudify/"
         parent = "docs"
         weight = 11
         url = "http://docs.getcloudify.org/3.4.0/"
-    [[menu.main]]
-        name = "3.3.0"
-        parent = "docs"
-        weight = 12
-        url = "http://docs.getcloudify.org/3.3.0/"
-    
 
     [[menu.main]]
         name = "tutorials"
