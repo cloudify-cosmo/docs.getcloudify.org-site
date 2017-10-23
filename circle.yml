@@ -2,3 +2,6 @@ machine:
   node:
     version: 6.11.4
 
+test:
+  override:
+    - echo "done"
