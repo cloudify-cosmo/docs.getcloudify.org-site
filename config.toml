@@ -11,8 +11,8 @@ plainIdAnchors=true
 highlightStyle="darkula"
 projecturl="https://github.com/cloudify-cosmo/docs.getcloudify.org"
 projectversion="master"
-# this is where you type google analytics ID
-googleAnalytics="UA-31930048-1"
+# this is where you type google tag manager (formerly google analytics) ID
+googleAnalytics="GTM-P8VJ87"
 # this is where you decide where "/" redirects to
 homepage="/intro/what-is-cloudify/"
 
