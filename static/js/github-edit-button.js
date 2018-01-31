@@ -6,7 +6,7 @@
             return;
         }
         var branch = getBranchFromUrl();
-        var markdownFile = location.pathname.replace(/\/$/, '.md');
+        var markdownFile = location.pathname.replace(/^\/.+?\//, '/').replace(/\/$/, '.md');
         location.href = getGithubUrl(branch, markdownFile);
 
     });
