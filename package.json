@@ -2,7 +2,7 @@
   "name": "docs-getcloudify",
   "description": "website",
   "version": "0.0.0",
-  "homepage": "http://docs.getcloudify.org",
+  "homepage": "http://docs.cloudify.co",
   "devDependencies": {
     "grunt": "^0.4.1",
     "grunt-aws-s3-gzip": "^0.10.1",

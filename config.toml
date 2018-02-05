@@ -24,32 +24,32 @@ homepage="/intro/what-is-cloudify/"
         name = "4.2.0 (Latest GA)"
         parent = "docs"
         weight = 6
-        url = "http://docs.getcloudify.org/4.2.0/"
+        url = "http://docs.cloudify.co/4.2.0/"
     [[menu.main]]
         name = "4.1.0"
         parent = "docs"
         weight = 7
-        url = "http://docs.getcloudify.org/4.1.0/"
+        url = "http://docs.cloudify.co/4.1.0/"
     [[menu.main]]
         name = "4.0.0"
         parent = "docs"
         weight = 8
-        url = "http://docs.getcloudify.org/4.0.0/"        
+        url = "http://docs.cloudify.co/4.0.0/"        
     [[menu.main]]
         name = "3.4.2"
         parent = "docs"
         weight = 9
-        url = "http://docs.getcloudify.org/3.4.2/"
+        url = "http://docs.cloudify.co/3.4.2/"
     [[menu.main]]
         name = "3.4.1"
         parent = "docs"
         weight = 10
-        url = "http://docs.getcloudify.org/3.4.1/"
+        url = "http://docs.cloudify.co/3.4.1/"
     [[menu.main]]
         name = "3.4.0"
         parent = "docs"
         weight = 11
-        url = "http://docs.getcloudify.org/3.4.0/"
+        url = "http://docs.cloudify.co/3.4.0/"
 
     [[menu.main]]
         name = "tutorials"
