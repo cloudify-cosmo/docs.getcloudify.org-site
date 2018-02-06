@@ -1,4 +1,4 @@
-baseurl = "http://docs.cloudify.co/"
+# baseurl = "http://docs.cloudify.co/"
 languageCode = "en-us"
 title = "Cloudify Documentation"
 theme="hugo-bootswatch"
