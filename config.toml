@@ -156,6 +156,11 @@ homepage="/intro/what-is-cloudify/"
   weight = 11
 
 [[menu.docs]]
+  identifier = "kubernetes"
+  name = "Kubernetes"
+  weight = 12
+
+[[menu.docs]]
   identifier = "apis"
   name = "APIs"
-  weight = 12
+  weight = 13
