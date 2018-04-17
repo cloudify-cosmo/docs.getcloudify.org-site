@@ -143,19 +143,23 @@ homepage="/intro/what-is-cloudify/"
   name = "Manager Policies"
   weight = 9
 
+[[menu.docs]]
+  identifier = "kubernetes"
+  name = "Cloudify and Kubernetes"
+  weight = 10
 
 [[menu.docs]]
   identifier = "agents"
   name = "Agents"
-  weight = 10
+  weight = 11
 
 
 [[menu.docs]]
   identifier = "composer"
   name = "Blueprint Composer"
-  weight = 11
+  weight = 12
 
 [[menu.docs]]
   identifier = "apis"
   name = "APIs"
-  weight = 12
+  weight = 13
