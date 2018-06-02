@@ -16,6 +16,7 @@
            data-original-title="" title="Help us improve!"><i class="fa fa-github"></i>&nbsp;&nbsp;Edit On Github</button>
           <h1 id="content-title">{{ .Title }}</h1>
           <hr>
+          {{ partial "outdated.html" . }}
           {{ .Content }}
         </div>
       </div>
