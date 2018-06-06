@@ -4,12 +4,3 @@ body{
 footer{
     padding-top:50px;
 }
-.outdated > span {
-    display: block;
-    padding: 1rem 1rem 0.1rem 1rem;
-    background-color: #d3dee3;
-    font-size: 125%;
-    border-radius: .9rem;
-    text-align: center;
-    line-height: 1rem;
-}
