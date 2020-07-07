@@ -55,27 +55,7 @@ homepage="/intro/what-is-cloudify/"
         parent = "docs"
         weight = 5
         url = "https://docs.cloudify.co/4.3.0/"
-    [[menu.main]]
-        name = "4.2.0"
-        parent = "docs"
-        weight = 6
-        url = "https://docs.cloudify.co/4.2.0/"
-    [[menu.main]]
-        name = "4.1.0"
-        parent = "docs"
-        weight = 7
-        url = "https://docs.cloudify.co/4.1.0/"
-    [[menu.main]]
-        name = "4.0.0"
-        parent = "docs"
-        weight = 8
-        url = "https://docs.cloudify.co/4.0.0/"        
-    [[menu.main]]
-        name = "3.4.2"
-        parent = "docs"
-        weight = 9
-        url = "https://docs.cloudify.co/3.4.2/"
-
+        
     [[menu.main]]
         name = "tutorials"
         weight = -90
