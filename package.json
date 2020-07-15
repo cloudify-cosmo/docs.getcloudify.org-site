@@ -23,7 +23,7 @@
     "grunt-sync": "~0.2.3",
     "grunt-text-replace": "~0.4.0",
     "jshint-stylish": "~1.0.1",
-    "lodash": "~3.8.0",
+    "lodash": "~4.17.19",
     "matchdep": "^0.3.0",
     "request": "~2.55.0"
   }
